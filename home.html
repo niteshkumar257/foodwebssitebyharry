@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+       q::before {
+  content: "«";
+  color: blue;
+} 
+q::after {
+  content: "»";
+  color: red;
+}
+.ribbon {
+  background-color: #5BC8F7;
+}
+.ribbon::before {
+  content: "Look at this orange box.";
+  background-color: #FFBA10;
+  border-color: black;
+  border-style: dotted;
+}
+li {
+  list-style-type: none;
+  position: relative;
+  margin: 2px;
+  padding: 0.5em 0.5em 0.5em 2em;
+  background: lightgrey;
+  font-family: sans-serif;
+}
+li.done {
+  background: #CCFF99;
+}
+
+li.done::before {
+  content: '';
+  position: absolute;
+  border-color: #009933;
+  border-style: solid;
+  border-width: 0 0.3em 0.25em 0;
+  height: 1em;
+  top: 1.3em;
+  left: 0.6em;
+  margin-top: -1em;
+  transform: rotate(45deg);
+  width: 0.5em;
+}
+.items{
+    margin: 12px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.name
+{
+    margin-right: 78px;
+}
+    </style>
+</head>
+<body>
+    <q>Some quotes</q>, he said, <q>are better than none.</q>
+    <span class="ribbon">Notice where the orange box is.</span>
+    <ul>
+        <li>Buy milk</li>
+        <li>Take the dog for a walk</li>
+        <li>Exercise</li>
+        <li>Write code</li>
+        <li>Play music</li>
+        <li>Relax</li>
+      </ul>
+      <div class="form">
+        <div class="items"><label for="name" class="name">Name</label>
+        <input type="text" placeholder="Enter your name"></div>
+        <div class="items">
+            <label   for="Email" class="name">Email</label>
+            <input type="text" placeholder="Enter your name">
+
+        </div>
+        <div class="items">
+            <label for="phone " class="name">Phone</label>
+            <input type="text" placeholder="Enter your valid mobile number">
+        </div>
+    </div>
+    <a href="http://facbook.com "target="blank">google</a>
+    <a href="mailto:niteshreddy257@gmail.com">Email</a>
+    
+</body>
+</html>

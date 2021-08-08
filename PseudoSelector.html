@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector</title>
+    <style>
+        body{
+            background-color: black;
+            
+        }
+.navbar ul{
+    display: flex;
+}
+.navbar::before{
+    background-image: url(images/chicken.png);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+li{
+    list-style: none;
+    padding: 0  2rem;
+    color:black;
+}
+h1{
+    
+    color:black;
+}
+p{
+    color:black;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Conatct Us </li>
+                <li>Services</li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <h1>Welcome to Vssut</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nesciunt earum libero fugiat soluta, quod placeat, quae odio tempore iure neque? Enim pariatur alias, voluptatibus reprehenderit deleniti quaerat porro nesciunt, commodi doloribus reiciendis vel?</p>
+        </div>
+    </section>
+</body>
+</html>
